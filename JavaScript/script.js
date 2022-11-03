@@ -1,14 +1,16 @@
-function slide1() {
-    document.getElementById('sld').src="./img/slide/slide1.webp";
-    setTimeout("slide2()", 3000)
-}
+let count = 1;
+document.getElementById("radio1").checked = true;
 
-function slide2() {
-    document.getElementById('sld').src="./img/slide/slide2.webp";
-    setTimeout("slide3()", 3000)
-}
+setInterval( function() {
+    nextImage();
 
-function slide3() {
-    document.getElementById('sld').src="./img/slide/slide3.jpg";
-    setTimeout("slide1()", 3000)
+}, 3000)
+
+function nextImage() {
+    count++;
+    if(count > 4) {
+        count = 1;
+    }
+
+    document.getElementById("radio" + count).checked = true;
 }

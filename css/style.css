@@ -8,7 +8,7 @@
 header {
     width: 1350px;
     height: 93px;
-    background-color: #eff1ed;
+    background-color: #E8EBE4;
 }
 
 .menu {
@@ -99,12 +99,83 @@ header {
     color: #E8EBE4;
 }
 
-#sld{
-    display: flex;
-    width: 1330px;
-    height: 550px;
-    
+
+main {
+    background: linear-gradient(180deg, #d4c7c7 0%, #ffffff 30%);
 }
+
+.slider {
+    margin: 0 auto;
+    padding-top: 70px;
+    width: 800px;
+    height: 500px;
+    top: 70px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #000;
+}
+
+input#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+input#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+input#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+input#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+
+
 
 
 .hero {
@@ -118,6 +189,7 @@ header {
 #img-homam {
     width: 1350px;
     height: 1024px;
+    margin-top: 80px;
 }
 
 #blz {
@@ -125,7 +197,7 @@ header {
     width: 520px;
     height: 313px;
     left: 780px;
-    top: 375px;
+    top: 1020px;
     font-family: '';
     font-size: 103px;
     font-style: normal;
@@ -142,7 +214,7 @@ span {
     width: 496px;
     height: 104px;
     left: 780px;
-    top: 700px;
+    top: 1340px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -156,7 +228,7 @@ span {
     width: 550px;
     height: 650px;
     left: 89.47px;
-    top: 700px;
+    top: 1900px;
     border-radius: 10px;
 }
 
@@ -165,7 +237,7 @@ span {
     width: 292px;
     height: 24px;
     left: 740px;
-    top: 780px;
+    top: 1980px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -183,7 +255,7 @@ span {
     width: 410px;
     height: 219px;
     left: 740px;
-    top: 830px;
+    top: 2030px;
     font-family: "";
     font-style: normal;
     font-weight: 900;
@@ -198,7 +270,7 @@ span {
     width: 350px;
     height: 320px;
     left: 740px;
-    top: 1020px;
+    top: 2230px;
     font-family: "";
     font-style: normal;
     font-weight: 400;
@@ -214,7 +286,7 @@ span {
     width: 1350px;
     height: 900px;
     left: 0;
-    top: 1500px;
+    top: 2650px;
     background-color: #505A5B;
 }
 
@@ -331,7 +403,7 @@ span {
    width: 1170px;
    height: 915px;
    left: 190px;
-   top: 2500px;
+   top: 3650px;
     
 }
 
@@ -423,7 +495,7 @@ footer {
     width: 1150px;
     height: 300px;
     left: 120px;
-    top: 3400px;
+    top: 4550px;
     background: #505A5B;
     border-radius: 0px;
 
